@@ -1,4 +1,6 @@
 # using int
+print('*'*30)
+print("Using Numbers")
 
 num = int(input("Enter a number between 0 and 9999: "))
 
@@ -13,9 +15,11 @@ print(f"Hundred: {hundred}")
 print(f"Thousand: {thousand}")
 
 # using string
+print('*'*30)
+print("Using Strings")
 
 num = input("Enter a number between 0 and 9999: ").strip().rjust(4, '0')
-print('.'+ num + '.')
+print('.'+ num + '.') # print for test
 
 print(f"Unit: {num[3]}")
 print(f"Ten: {num[2]}")
