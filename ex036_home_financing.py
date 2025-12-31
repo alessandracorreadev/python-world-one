@@ -1,4 +1,5 @@
-from time import  sleep
+from time import sleep
+
 price = float(input("What is the value of the property? R$"))
 salary = float(input("What is the buyer's salary? R$"))
 years = int(input("How many years would you like to take to pay for the house? "))
