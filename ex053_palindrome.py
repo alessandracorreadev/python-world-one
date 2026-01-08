@@ -12,4 +12,9 @@ else:
     print("The sentence is not a palindrome!")
 
 
-
+# with for
+# reversed = ''
+# for letter in range(len(join_sentence)-1, -1, -1):
+#     reversed += join_sentence[letter]
+#
+# print(reversed)
