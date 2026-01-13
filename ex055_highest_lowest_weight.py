@@ -2,7 +2,7 @@ highest = 0
 lowest = 0
 
 for people in range(1, 6):
-    weight = float(input(f"Enter the {people}º people weight: "))
+    weight = float(input(f"Enter the weight of person {people}: "))
     if people == 1:
         highest = weight
         lowest = weight

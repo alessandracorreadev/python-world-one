@@ -5,7 +5,7 @@ count_legal_age = 0
 not_legal_age = 0
 
 for people in range(1, 8):
-    birth_year = int(input(f"Enter the {people}º birth year: "))
+    birth_year = int(input(f"Enter the birth year of person {people}: "))
     age = today - birth_year
     if age >= 21:
         count_legal_age +=1

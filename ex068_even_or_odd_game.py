@@ -12,11 +12,11 @@ while True:
     # players choose even or odd
     player_choice = input("Even or odd? [E/O]: ").strip().lower()[0]
     # computer sort a number
-    computer_numb = randint(1, 9)
+    computer_numb = randint(0, 10)
     # sum of player and computer
     sum_numb = player_numb + computer_numb
     print('-' * 50)
-    print(f"Computer choose {computer_numb}. The sum is equal {sum_numb}.", end='')
+    print(f"Computer choose {computer_numb}. The sum is equal {sum_numb}.", end=' ')
     # testing if sum is even or odd
     if sum_numb % 2 == 0:
         correct_choice = 'e'
@@ -36,6 +36,6 @@ while True:
         count += 1
 
 
-print("YOU LOOSE.")
+print("YOU LOSE.")
 print('='*50)
 print(f"GAME OVER. You win {count} times.")

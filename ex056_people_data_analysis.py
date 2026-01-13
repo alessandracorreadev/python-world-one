@@ -5,9 +5,9 @@ age_oldest_man = 0
 woman_under_20 = 0
 
 for people in range(1, 5):
-    name = input(f"Enter the {people}º people name: ").strip().capitalize()
-    age = int(input(f"Enter the {people}º people age: "))
-    sex = input(f"Enter the {people}º people sex (male/female): ").strip().lower()[0]
+    name = input(f"Enter the name of person {people}: ").strip().capitalize()
+    age = int(input(f"Enter the age of person {people}: "))
+    sex = input(f"Enter the sex of person {people}: (male/female) ").strip().lower()[0]
     print('-'*50)
     # adding the ages
     sum_age += age
