@@ -27,14 +27,14 @@ for each_person in people:
 
 print(f"A total of {len(people)} people were registered.")
 
-print(f"Highest weight: {highest_w} - ", end=' ')
+print(f"Highest weight: [{highest_w}] - ", end=' ')
 for weight in people:
     if weight[1] == highest_w:
         print(weight[0], end=' ')
 
 print()
 
-print(f"Lowest weight: {lowest_w} - ", end=' ')
+print(f"Lowest weight: [{lowest_w}] - ", end=' ')
 for weight in people:
     if weight[1] == lowest_w:
         print(weight[0], end=' ')
