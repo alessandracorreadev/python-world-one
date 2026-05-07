@@ -1,6 +1,6 @@
 def area(w, l):
     a = w * l
-    print(f"The area of a {w:.1f} x {l:.1f} meter plot is {a:.1f} square meters.")
+    print(f"The area of a {w} x {l} meter plot is {a:.2f} square meters.")
 
 print('-'*50)
 print('CALCULATING THE AREA OF A PLOT IN METERS'.center(50))
