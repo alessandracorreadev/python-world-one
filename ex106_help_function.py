@@ -1,6 +1,5 @@
-
-
 from time import sleep
+
 def help_function(name):
     return help(name)
 

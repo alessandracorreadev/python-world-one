@@ -1,0 +1,4 @@
+Harry Potter;11
+Rúbeo Hagrid;62
+Rony Weasley;11
+Alvo Dumbledore;110
