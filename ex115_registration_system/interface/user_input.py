@@ -3,18 +3,22 @@ from ex115_registration_system.useful import colors, header, read_int
 from ex115_registration_system.file import new_record, all_records
 from time import sleep
 
-def user_input(options,file_name):
+def user_input(options, file_name):
     while True:
         interactive_menu.menu(options)
         while True:
             user_opt = read_int.read_int("Enter your option: ")
             if user_opt == 1:
                 # return de file records.txt content
+                header.header("ALL RECORDS")
                 all_records.all_records(file_name)
                 break
             elif user_opt == 2:
                 # register a new person in records.txt
-                new_record.new_r(file_name)
+                header.header("NEW RECORD")
+                name = input("Name: ")
+                age = read_int.read_int("Age: ")
+                new_record.new_r(file_name, name, age)
                 break
             elif user_opt == 3:
                 break

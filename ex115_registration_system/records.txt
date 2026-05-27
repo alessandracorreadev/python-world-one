@@ -2,3 +2,6 @@ Harry Potter;11
 Rúbeo Hagrid;62
 Rony Weasley;11
 Alvo Dumbledore;110
+unknown;0
+Minerva McGonagall;66
+Severo Snape;31
