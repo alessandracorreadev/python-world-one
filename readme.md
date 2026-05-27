@@ -1,7 +1,7 @@
 # Python World One
 
 ## 🇺🇸 English
-Repository with beginner-level Python exercises from the *Python Mundo 1* course by Professor Gustavo Guanabara.  
+Repository with beginner-level Python exercises from the *Python Mundo 1, 2, 3* course by Professor Gustavo Guanabara.  
 Contains my own solutions, developed to practice fundamentals such as variables, conditionals, loops, and basic logic.
 
 ## 🇧🇷 Português
