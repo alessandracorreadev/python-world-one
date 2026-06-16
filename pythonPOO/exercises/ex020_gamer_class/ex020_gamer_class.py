@@ -37,3 +37,4 @@ gamer2.add_favorite("Dance Dance Revolution")
 gamer2.add_favorite("Red Dead Redemption")
 
 gamer2.card()
+
