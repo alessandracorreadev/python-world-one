@@ -7,7 +7,7 @@ def main():
 
     print(f"Perimeter = {s1.perimeter():.1f}")
     print(f"Area = {s1.area():.1f}")
-    inspect(s1)
+    inspect(s1, methods=True)
     print('-'*30)
 
     c1 = Circle(12)

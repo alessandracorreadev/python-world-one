@@ -1,3 +1,4 @@
+import math
 from math import sqrt
 from abc import ABC, abstractmethod
 
@@ -7,11 +8,11 @@ class Polygon(ABC):
         self.sides = sides
 
     @abstractmethod
-    def perimeter(self):
+    def perimeter(self) -> float:
         pass
 
     @abstractmethod
-    def area(self):
+    def area(self) -> float:
         pass
 
 
@@ -21,7 +22,7 @@ class Square(Polygon):
         self.side_length = side_length
 
     def perimeter(self):
-        return self.sides * self.side_length
+        return self.side_length * 4
 
     def area(self):
         return self.side_length**2
@@ -32,14 +33,11 @@ class Circle(Polygon):
         super().__init__(sides = 0)
         self.radius = radius
 
-    def diameter(self):
-        return self.radius*2
-
     def perimeter(self):
-        return 3.14 * (self.diameter())
+        return (2 * math.pi) * (self.radius)
 
     def area(self):
-        return 3.14 * self.radius
+        return math.pi * (self.radius ** 2)
 
 
 class Triangle(Polygon):
