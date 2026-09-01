@@ -9,6 +9,7 @@ def main():
     # inspect(account1, methods=True, private=True)
     account1.deposit()
     account1.withdraw()
+    account1.name = "Maria"
 
 if __name__ == "__main__":
     main()

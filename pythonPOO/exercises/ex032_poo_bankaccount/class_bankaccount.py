@@ -9,6 +9,23 @@ class BankAccount:
         self.__balance = balance
         self.__hash = sha256(key.encode('utf-8')).hexdigest()
 
+    @property
+    def name(self):
+        return self._holder
+
+    @name.setter
+    def name(self, name):
+        if len(name) > 2:
+            print('-' * 30)
+            print('NAME CHANGE'.center(30))
+            print('-' * 30)
+            if self.ask_password():
+                self._holder = name
+                print(f"Name changed to: {self._holder}")
+            else:
+                print(f"Name change canceled.")
+
+
     def get_balance(self):
         return self.__balance
 
@@ -54,6 +71,8 @@ class BankAccount:
                     self.deduct_balance(value)
                     print(f"A ${value:.2f} [red]withdraw[/] was completed successfully.")
                     print(f"Current balance: {self.get_balance()}")
+                else:
+                    print("[red]Withdraw cancelled.[/]")
                 break
             print("[red]Value must be positive or cannot exceed the balance.[/]")
 
